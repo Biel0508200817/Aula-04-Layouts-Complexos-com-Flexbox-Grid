@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Bella Vita | Ristorante Italiano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Cormorant Garamond', serif; }
+    </style>
+</head>
+<body class="bg-[#fcfaf5] text-gray-800">
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="border-[1.5px] border-[#d4af37] p-2 flex flex-col items-center bg-white">
+                <span class="text-[0.45rem] uppercase tracking-[2px] text-[#d4af37]">Ristorante</span>
+                <span class="text-lg font-bold tracking-widest text-black">LA BELLA VITA</span>
+                <span class="text-[0.45rem] uppercase tracking-[2px] text-[#d4af37]">Cucina Originale</span>
+            </div>
+
+            <nav class="hidden md:flex space-x-8 text-[0.75rem] font-semibold uppercase tracking-wider">
+                <a href="#comidas" class="hover:text-[#d4af37] transition">Menu</a>
+                <a href="#bebidas" class="hover:text-[#d4af37] transition">Vinhos</a>
+                <a href="#contato" class="hover:text-[#d4af37] transition">Contato</a>
+            </nav>
+
+            <button id="menu-btn" class="md:hidden text-black focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col space-y-4 font-semibold uppercase text-xs">
+            <a href="#comidas" class="block">Menu</a>
+            <a href="#bebidas" class="block">Vinhos</a>
+            <a href="#contato" class="block">Contato</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative h-[60vh] flex items-center justify-center bg-cover bg-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1000');">
+            <div class="text-center">
+                <div class="mb-2 text-sm tracking-widest uppercase">Dal 1958</div>
+                <h1 class="text-4xl md:text-6xl mb-4">Tradição em cada detalhe</h1>
+                <div class="w-12 h-[2px] bg-[#d4af37] mx-auto"></div>
+            </div>
+        </section>
+
+        <section id="comidas" class="max-w-7xl mx-auto px-6 py-16">
+            <h2 class="text-center text-4xl mb-12">I Nostri Piatti</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white rounded overflow-hidden shadow-md group">
+                    <div class="relative h-52">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-[#d4af37] text-white text-[10px] px-2 py-1 uppercase">Chef's Choice</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl mb-2">Insalata Caprese</h3>
+                        <p class="text-sm text-gray-500 mb-4">Mussarela de búfala, tomates San Marzano e manjericão fresco.</p>
+                        <button class="w-full py-3 bg-black text-white text-xs uppercase tracking-widest hover:bg-[#d4af37] transition-colors">Adicionar • R$ 42</button>
+                    </div>
+                </article>
+
+                </div>
+        </section>
+    </main>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
