@@ -3,78 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Bella Vita | Ristorante Italiano</title>
+    <title>Burger Roots | Crafted with Fire</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
+        .font-bebas { font-family: 'Bebas Neue', sans-serif; }
         body { font-family: 'Montserrat', sans-serif; }
-        h1, h2, h3, .font-serif { font-family: 'Cormorant Garamond', serif; }
     </style>
 </head>
-<body class="bg-[#fcfaf5] text-gray-800">
+<body class="bg-[#0f0f0f] text-zinc-100">
 
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="border-[1.5px] border-[#d4af37] p-2 flex flex-col items-center bg-white">
-                <span class="text-[0.45rem] uppercase tracking-[2px] text-[#d4af37]">Ristorante</span>
-                <span class="text-lg font-bold tracking-widest text-black">LA BELLA VITA</span>
-                <span class="text-[0.45rem] uppercase tracking-[2px] text-[#d4af37]">Cucina Originale</span>
+    <header class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            
+            <div class="flex flex-col items-center leading-none">
+                <span class="text-[9px] uppercase tracking-[0.3em] text-orange-500 font-bold">The Original</span>
+                <span class="text-3xl font-bebas tracking-wider text-white">BURGER<span class="text-orange-500">ROOTS</span></span>
             </div>
 
-            <nav class="hidden md:flex space-x-8 text-[0.75rem] font-semibold uppercase tracking-wider">
-                <a href="#comidas" class="hover:text-[#d4af37] transition">Menu</a>
-                <a href="#bebidas" class="hover:text-[#d4af37] transition">Vinhos</a>
-                <a href="#contato" class="hover:text-[#d4af37] transition">Contato</a>
+            <nav class="hidden md:flex space-x-10 text-[11px] font-extrabold uppercase tracking-widest text-zinc-300">
+                <a href="#menu" class="hover:text-orange-500 transition-colors">Cardápio</a>
+                <a href="#vibe" class="hover:text-orange-500 transition-colors">A Experiência</a>
+                <a href="#contato" class="hover:text-orange-500 transition-colors">Localização</a>
             </nav>
 
-            <button id="menu-btn" class="md:hidden text-black focus:outline-none">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            <button id="menu-btn" class="md:hidden text-orange-500 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
             </button>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col space-y-4 font-semibold uppercase text-xs">
-            <a href="#comidas" class="block">Menu</a>
-            <a href="#bebidas" class="block">Vinhos</a>
-            <a href="#contato" class="block">Contato</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-t border-white/5 px-6 py-6 flex flex-col space-y-4 font-bold uppercase text-center text-xs tracking-widest">
+            <a href="#menu" class="py-2 border-b border-white/5">Cardápio</a>
+            <a href="#vibe" class="py-2 border-b border-white/5">A Experiência</a>
+            <a href="#contato" class="py-2">Localização</a>
         </div>
     </header>
 
     <main>
-        <section class="relative h-[60vh] flex items-center justify-center bg-cover bg-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1000');">
-            <div class="text-center">
-                <div class="mb-2 text-sm tracking-widest uppercase">Dal 1958</div>
-                <h1 class="text-4xl md:text-6xl mb-4">Tradição em cada detalhe</h1>
-                <div class="w-12 h-[2px] bg-[#d4af37] mx-auto"></div>
+        <section class="relative h-[85vh] flex items-center justify-center text-center px-4 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=1200" class="absolute inset-0 w-full h-full object-cover opacity-40 scale-110 blur-[2px]" alt="Background">
+            <div class="relative z-10">
+                <span class="inline-block px-4 py-1 mb-4 border border-orange-500 text-orange-500 text-[10px] font-bold uppercase tracking-widest">Desde 2012</span>
+                <h1 class="text-7xl md:text-9xl font-bebas text-white leading-none drop-shadow-2xl">RESPEITO <br> <span class="text-orange-500 underline decoration-white/20">AO FOGO</span></h1>
+                <p class="mt-6 text-zinc-400 max-w-lg mx-auto text-sm md:text-base font-medium">Blends artesanais grelhados na brasa viva e pão brioche selado na manteiga.</p>
             </div>
         </section>
 
-        <section id="comidas" class="max-w-7xl mx-auto px-6 py-16">
-            <h2 class="text-center text-4xl mb-12">I Nostri Piatti</h2>
+        <section id="menu" class="max-w-7xl mx-auto px-6 py-24">
             
+            <div class="flex flex-col items-center mb-16">
+                <h2 class="text-5xl font-bebas tracking-wide italic">Os Mais Pedidos</h2>
+                <div class="w-20 h-1 bg-orange-500 mt-2"></div>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <article class="bg-white rounded overflow-hidden shadow-md group">
-                    <div class="relative h-52">
-                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format" class="w-full h-full object-cover">
-                        <span class="absolute top-4 left-4 bg-[#d4af37] text-white text-[10px] px-2 py-1 uppercase">Chef's Choice</span>
+                <article class="bg-zinc-900/50 border border-white/5 rounded-2xl overflow-hidden hover:border-orange-500/50 transition-all duration-500 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <span class="absolute top-4 right-4 bg-orange-600 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase italic italic">Hot!</span>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl mb-2">Insalata Caprese</h3>
-                        <p class="text-sm text-gray-500 mb-4">Mussarela de búfala, tomates San Marzano e manjericão fresco.</p>
-                        <button class="w-full py-3 bg-black text-white text-xs uppercase tracking-widest hover:bg-[#d4af37] transition-colors">Adicionar • R$ 42</button>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bebas text-white uppercase">Roots Bacon King</h3>
+                        <p class="text-zinc-500 text-sm mt-2 mb-6">180g de carne angus, queijo cheddar, muito bacon crocante e geleia de pimenta.</p>
+                        <div class="flex justify-between items-end">
+                            <span class="text-3xl font-bebas text-orange-500">R$ 44,00</span>
+                            <button class="bg-white text-black text-[10px] font-extrabold px-6 py-3 uppercase tracking-tighter hover:bg-orange-500 hover:text-white transition-colors">Adicionar</button>
+                        </div>
                     </div>
                 </article>
 
+                <article class="bg-zinc-900/50 border border-white/5 rounded-2xl overflow-hidden hover:border-orange-500/50 transition-all duration-500 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bebas text-white uppercase">Classic Smash</h3>
+                        <p class="text-zinc-500 text-sm mt-2 mb-6">Dois burgers smash de 90g, cebola roxa, picles artesanal e molho da casa.</p>
+                        <div class="flex justify-between items-end">
+                            <span class="text-3xl font-bebas text-orange-500">R$ 36,00</span>
+                            <button class="bg-white text-black text-[10px] font-extrabold px-6 py-3 uppercase tracking-tighter hover:bg-orange-500 hover:text-white transition-colors">Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-zinc-900/50 border border-white/5 rounded-2xl overflow-hidden hover:border-orange-500/50 transition-all duration-500 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=600" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bebas text-white uppercase">Truffle Burger</h3>
+                        <p class="text-zinc-500 text-sm mt-2 mb-6">Blend de costela, queijo brie, maionese trufada e cogumelos salteados.</p>
+                        <div class="flex justify-between items-end">
+                            <span class="text-3xl font-bebas text-orange-500">R$ 52,00</span>
+                            <button class="bg-white text-black text-[10px] font-extrabold px-6 py-3 uppercase tracking-tighter hover:bg-orange-500 hover:text-white transition-colors">Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="vibe" class="bg-zinc-950 py-24 border-y border-white/5">
+            
+            <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2 overflow-hidden rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1550950158-d0d960dff51b?w=800" class="w-full h-[450px] object-cover" alt="Vibe da casa">
                 </div>
+                <div class="w-full md:w-1/2 flex flex-col items-start space-y-6">
+                    <h2 class="text-6xl font-bebas text-white italic">Mais que Burger, <br><span class="text-orange-500">Uma Vibe Roots.</span></h2>
+                    <p class="text-zinc-400 leading-relaxed">Ambiente industrial, som pesado e o cheiro de defumação no ar. Nossos blends são moídos diariamente e cada disco de carne é respeitado no fogo.</p>
+                    <div class="grid grid-cols-2 gap-4 w-full text-[10px] font-bold uppercase tracking-widest text-zinc-300">
+                        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-500"></span> Carne Angus</div>
+                        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-500"></span> Brasa Viva</div>
+                        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-500"></span> Pão Artesanal</div>
+                        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-500"></span> Craft Beer</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="max-w-7xl mx-auto px-6 py-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="flex flex-col space-y-8">
+                    <h2 class="text-6xl font-bebas text-white uppercase">Onde a Brasa <br> <span class="text-orange-500">Nunca Apaga</span></h2>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-5">
+                            <div class="w-12 h-12 bg-zinc-900 flex items-center justify-center text-orange-500 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+                            </div>
+                            <p class="text-zinc-300 font-medium">Rua da Forja, 666 - Distrito Industrial, SP</p>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <div class="w-12 h-12 bg-zinc-900 flex items-center justify-center text-orange-500 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <p class="text-zinc-300 font-medium">Terça a Domingo: 18h às 00h</p>
+                        </div>
+                    </div>
+                    <button class="bg-orange-500 text-black font-black uppercase text-[10px] tracking-[0.2em] py-4 px-8 self-start hover:bg-white transition-colors">Traçar Rota</button>
+                </div>
+                <div class="h-[400px] rounded-3xl overflow-hidden grayscale opacity-50 border border-white/10 relative">
+                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/40">
+                        <span class="bg-orange-500 text-black px-4 py-1 font-bebas text-xl">Roots Map</span>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer class="bg-black py-12 text-center border-t border-white/5">
+        <div class="text-2xl font-bebas mb-2 italic">BURGER<span class="text-orange-500">ROOTS</span></div>
+        <p class="text-zinc-600 text-[10px] tracking-widest uppercase">&copy; 2026 - Crafted with fire and code.</p>
+    </footer>
 
     <script>
         const btn = document.getElementById('menu-btn');
         const menu = document.getElementById('mobile-menu');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => menu.classList.add('hidden')));
     </script>
 </body>
 </html>
